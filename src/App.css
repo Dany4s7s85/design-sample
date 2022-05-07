@@ -1,0 +1,18 @@
+.navMainDiv{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.CustomLink{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.CustomLink:hover{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,514 @@
+.ButtonsMainDiv{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ButtonsMainDiv div{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* start design for button 1 ...........................................*/
+
+.Button-Design-1{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    color: #808080;
+    margin: 20% 0;
+    background-color: #000;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    transition: all 2s;
+}
+
+.Button-Design-1:hover{
+    color: #000;
+    border-color:#000;
+    background-color: #fff;
+}
+
+.Button-Design-1::before{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    top: 80%;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    transition: all 2s;
+}
+
+.Button-Design-1:hover::before{
+    background-color: #808080;
+    top: 120%;
+}
+
+/* Start Design for Button 2 .............................................. */
+.Button-Design-2{
+    width: 200px;
+    height: 70px;
+    border-radius: 45px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    background: #000;
+    color: #fff;
+    border: 1px solid;
+    transition: all 1s ease;
+    border: 4px solid lightblue;
+    transition-delay: 0.2s;
+    cursor: pointer;
+}
+
+.Button-Design-2:hover{
+    box-shadow: 0 0 20px #a8eb12, 0 0 40px #00E4B6;
+    border: 4px solid #a8eb12;
+    background: #a8eb12;
+    color: #000;
+    transition: box-shadow 7s, border 3s, background 3s, color 3s;
+}
+
+
+/* Start Design for Button 3 .............................................. */
+.Button-Design-3{
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 50px;
+    border: 3px solid #3c67e3;
+    border-radius: 10px;
+}
+
+.Button-Design-3:hover{
+    animation: pulsate 2s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}
+
+/* Start Design for Button 4 .............................................. */
+.Button-Design-4{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.Button-Design-4:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.Button-Design-4:active {
+    color: #000
+}
+
+.Button-Design-4:active::after {
+    background: transparent;
+}
+
+.Button-Design-4:hover::before {
+    opacity: 1;
+}
+
+.Button-Design-4::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Start Design for Button 5 .............................................. */
+.Button-Design-5 {
+    border-color: blue;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    transition: all 2s ease-in-out;
+  }
+  .Button-Design-5:hover {
+      color: #000;
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+  }
+
+  /* Start Design for Button 6 .............................................. */
+  .Button-Design-6 {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .Button-Design-6:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+  
+  .Button-Design-6:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 2s;
+  }
+  
+  .Button-Design-6:hover:before {
+    left: 100%;
+  }
+
+/* Start Design for Button 7 .............................................. */
+  .Button-Design-7{
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+.Button-Design-7:before{
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.Button-Design-7:active {
+    color: #000
+}
+
+.Button-Design-7:active::after {
+    background: transparent;
+}
+
+.Button-Design-7:hover::before {
+    opacity: 1;
+}
+
+.Button-Design-7::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid green;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Start Design for Button 8 .............................................. */
+.Button-Design-8{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+
+.Button-Design-8::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 1s;
+}
+
+.Button-Design-8:hover{
+    color: green;
+}
+
+.Button-Design-8:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Start Design for Button 9 .............................................. */
+  
+  .Button-Design-9{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-left: 50px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 2s;
+  }
+  
+  .Button-Design-9 span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .Button-Design-9:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: green;
+    transition: all 2s;
+  }
+  
+  .Button-Design-9:hover{
+    color: #fff;
+  }
+  
+  .Button-Design-9:hover:after{
+    width: 100%;
+  }
+
+  /* Start Design for Button 11 .............................................. */
+  .Button-Design-11 {
+    background: linear-gradient(-30deg, #0b1b3d 50%, #08142b 50%);
+    padding: 20px 40px;
+    margin: 12px;
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    color: #d4e0f7;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+
+  .Button-Design-11::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #8592ad;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+  }
+
+  .Button-Design-11:hover::before {
+    opacity: 0.2;
+  }
+  
+  .Button-Design-11 span {
+    position: absolute;
+  }
+  
+  .Button-Design-11 span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+    background: linear-gradient(to left, rgba(8, 20, 43, 0), #2662d9);
+    -webkit-animation: 2s animateTop linear infinite;
+    animation: 2s animateTop linear infinite;
+  }
+
+  @-webkit-keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+
+  .Button-Design-11 span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+    background: linear-gradient(to top, rgba(8, 20, 43, 0), #2662d9);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+    animation: 2s animateRight linear -1s infinite;
+  }
+  
+  @-webkit-keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+
+  .Button-Design-11 span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(8, 20, 43, 0)), to(#2662d9));
+    background: linear-gradient(to right, rgba(8, 20, 43, 0), #2662d9);
+    -webkit-animation: 2s animateBottom linear infinite;
+            animation: 2s animateBottom linear infinite;
+  }
+  
+  @-webkit-keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+
+  .Button-Design-11 span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 2px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 20, 43, 0)), to(#2662d9));
+    background: linear-gradient(to bottom, rgba(8, 20, 43, 0), #2662d9);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+    animation: 2s animateLeft linear -1s infinite;
+  }
+  
+  @-webkit-keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }
+  

@@ -1,0 +1,122 @@
+.DropdownsSamples > div{
+    margin-top: 20px;
+}
+
+
+
+/* dropdown 1 ........................................................ */
+.mainNavDiv-1{
+    background-color:beige;
+    display: flex;
+}
+.dropdown-1{
+    background-color: antiquewhite;
+    width: 120px;
+}
+.dropdown-1 span{
+    content: '';
+    position:absolute;
+    display: block;
+    width: 120px;
+}
+.dropdown-links-1{
+    display: none;
+    background-color: aqua;
+}
+.dropdown-1:active .dropdown-links-1{
+    display: block;
+}
+.dropdown-1:focus .dropdown-links-1{
+    display: block;
+}
+
+
+/* dropdown 2 ........................................................ */
+.mainNavDiv-2{
+    background-color:beige;
+    display: flex;
+}
+.dropdown-2{
+    background-color: antiquewhite;
+    width: 120px;
+}
+.dropdown-2 span{
+    position:absolute;
+    display: block;
+    width: 120px;
+    clip-path: polygon(50% 0%, 55% 10%, 100% 10%, 100% 66%, 100% 100%, 50% 100%, 10% 100%, 0 100%, 0 10%, 45% 10%);
+}
+.dropdown-links-2{
+    padding-top: 10px;
+    display: none;
+    background-color: aqua;
+}
+.dropdown-2:active .dropdown-links-2{
+    display: block;
+}
+.dropdown-2:focus .dropdown-links-2{
+    display: block;
+}
+
+/* dropdown 3 ........................................................ */
+.mainNavDiv-3{
+    background-color:beige;
+    display: flex;
+}
+.dropdown {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+
+    /* Reset list styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    /* Spacing */
+    padding: 8px;
+
+    /* Used to position the sub dropdown */
+    position: relative;
+}
+
+/* The sub dropdown */
+.dropdown ul {
+    /* Border */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0;
+    position: absolute;
+    top: 100%;
+
+    /* Reset styles */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    /* Width */
+    width: 120px;
+}
+
+/* The second level sub dropdown */
+.dropdown ul ul {
+    left: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Change background color of list item when being hovered */
+.dropdown li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Show the direct sub dropdown when hovering the list item */
+.dropdown li:hover > ul {
+    display: block;
+}
